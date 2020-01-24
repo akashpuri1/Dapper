@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace SampleProject.Dtos
+namespace SampleProject.Models
 {
-    public class UserDto
+    public class Data
     {
         [Key]
         public int ID { get; set; }

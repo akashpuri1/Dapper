@@ -1,17 +1,14 @@
 ﻿using SampleProject.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SampleProject.Services
 {
     public interface IUserServices
     {
-        List<User> GetUsers();
-        User GetUserById(int id);
-        User CreateUser(User userModel, string password);
-        User EditUser(User userModel);
+        List<Data> GetUsers();
+        Data GetUserById(int id);
+        Data CreateUser(Data userModel, string password);
+        Data EditUser(Data userModel);
         void DeleteUser(int id);
     }
 }

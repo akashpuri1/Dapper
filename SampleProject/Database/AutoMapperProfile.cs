@@ -1,10 +1,6 @@
 ﻿using AutoMapper;
 using SampleProject.Dtos;
 using SampleProject.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SampleProject.Database
 {
@@ -12,8 +8,8 @@ namespace SampleProject.Database
     {
         public AutoMapperProfile()
         {
-            CreateMap<User, UserDto>();
-            CreateMap<UserDto, User>();
+            CreateMap<Data, DataDto>();
+            CreateMap<DataDto, Data>();
         }
     }
 }

@@ -1,0 +1,35 @@
+2020-01-23 16:13:24.916 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2020-01-23 16:13:25.138 +05:30 [Debug] The request path "" does not match the path filter
+2020-01-23 16:13:25.175 +05:30 [Information] The file "/swagger-ui-standalone-preset.js" was not modified
+2020-01-23 16:13:25.177 +05:30 [Information] The file "/swagger-ui-bundle.js" was not modified
+2020-01-23 16:13:25.179 +05:30 [Information] The file "/swagger-ui.css" was not modified
+2020-01-23 16:13:25.191 +05:30 [Debug] Initializing Razor view compiler with no compiled views.
+2020-01-23 16:13:25.195 +05:30 [Debug] Handled. Status code: 304 File: "/swagger-ui-bundle.js"
+2020-01-23 16:13:25.195 +05:30 [Debug] Handled. Status code: 304 File: "/swagger-ui-standalone-preset.js"
+2020-01-23 16:13:25.195 +05:30 [Debug] Handled. Status code: 304 File: "/swagger-ui.css"
+2020-01-23 16:13:25.231 +05:30 [Debug] No candidates found for the request path '"/robots.txt"'
+2020-01-23 16:13:25.231 +05:30 [Debug] Request did not match any endpoints
+2020-01-23 16:40:32.791 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2020-01-23 16:40:36.170 +05:30 [Debug] The request path "" does not match the path filter
+2020-01-23 16:40:36.193 +05:30 [Debug] Initializing Razor view compiler with no compiled views.
+2020-01-23 16:40:36.239 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/User/getusers"'
+2020-01-23 16:40:36.246 +05:30 [Debug] Endpoint '"SampleProject.Controllers.UserController.GetUsers (SampleProject)"' with route pattern '"api/User/getusers"' is valid for the request path '"/api/User/getusers"'
+2020-01-23 16:40:36.247 +05:30 [Debug] Request matched endpoint '"SampleProject.Controllers.UserController.GetUsers (SampleProject)"'
+2020-01-23 16:40:36.253 +05:30 [Information] Executing endpoint '"SampleProject.Controllers.UserController.GetUsers (SampleProject)"'
+2020-01-23 16:40:36.274 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-01-23 16:40:36.415 +05:30 [Information] Route matched with "{action = \"GetUsers\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetUsers()" on controller "SampleProject.Controllers.UserController" ("SampleProject").
+2020-01-23 16:40:36.422 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-01-23 16:40:36.422 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2020-01-23 16:40:36.422 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-01-23 16:40:36.423 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-01-23 16:40:36.423 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-01-23 16:40:36.425 +05:30 [Debug] Executing controller factory for controller "SampleProject.Controllers.UserController" ("SampleProject")
+2020-01-23 16:40:36.670 +05:30 [Debug] Executed controller factory for controller "SampleProject.Controllers.UserController" ("SampleProject")
+2020-01-23 16:40:39.395 +05:30 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-01-23 16:40:39.398 +05:30 [Debug] No information found on request to perform content negotiation.
+2020-01-23 16:40:39.398 +05:30 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-01-23 16:40:39.398 +05:30 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-01-23 16:40:39.399 +05:30 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-01-23 16:40:39.403 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[SampleProject.Dtos.DataDto, SampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-01-23 16:40:39.422 +05:30 [Information] Executed action "SampleProject.Controllers.UserController.GetUsers (SampleProject)" in 2990.6888000000004ms
+2020-01-23 16:40:39.425 +05:30 [Information] Executed endpoint '"SampleProject.Controllers.UserController.GetUsers (SampleProject)"'

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SampleProject.Database;
 using SampleProject.Dtos;
@@ -31,7 +27,7 @@ namespace SampleProject.Controllers
         public IActionResult GetUsers()
         {
             var users = _userService.GetUsers();
-            var userDtos = _mapper.Map<IList<UserDto>>(users);
+            var userDtos = _mapper.Map<IList<DataDto>>(users);
 
             return Ok(userDtos);
         }
@@ -44,27 +40,19 @@ namespace SampleProject.Controllers
 
         [AllowAnonymous]
         [HttpPost("adduser")]
-        public IActionResult CreateUser(User userModel)
+        public IActionResult CreateUser(DataDto userModel)
         {
             try
             {
-                var adduser = _userService.CreateUser(userModel, userModel.Password);
+                var user = _mapper.Map<Data>(userModel);
+                var adduser = _userService.CreateUser(user, userModel.Password);
                 if (adduser == null)
                     return BadRequest(new { message = "Cannot be empty" });
 
-                return Ok(new
-                {
-                    ID = adduser.ID,
-                    Title = adduser.Title,
-                    FirstName = adduser.FirstName,
-                    LastName = adduser.LastName,
-                    Email = adduser.Email,
-                    Password = adduser.Password
-                });
+                return Ok(userModel);
             }
             catch (AppException ex)
             {
-
                 // return error message if there was an exception
                 return BadRequest(new
                 {
@@ -74,9 +62,10 @@ namespace SampleProject.Controllers
         }
 
         [HttpPost("edituser/{id}")]
-        public IActionResult EditUser(User userModel)
+        public IActionResult EditUser(DataDto userModel)
         {
-            return Ok(_userService.EditUser(userModel));
+            var user = _mapper.Map<Data>(userModel);
+            return Ok(_userService.EditUser(user));
         }
 
         [HttpPost("delete/{id}")]
